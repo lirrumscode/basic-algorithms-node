@@ -1,0 +1,16 @@
+{
+  "name": "pruebas",
+  "version": "0.0.2",
+  "description": "application from algorithms for nodeJS",
+  "type": "module",
+  "scripts": {
+    "test": "test",
+    "run": "nodemon ./src/index"
+  },
+  "author": "Lina Castro",
+  "license": "MIT",
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "nodemon": "^2.0.19"
+  }
+}
