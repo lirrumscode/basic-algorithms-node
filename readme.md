@@ -18,7 +18,7 @@ npm install
 _To start the project in developer mode use the script:_
 
 ```
-npm run-script run
+npm run-script start
 ```
 
 ## Built with 🛠️
