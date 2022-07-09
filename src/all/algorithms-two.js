@@ -12,7 +12,7 @@ const callUserNumbers = (user, number) => {
     let ind = 0;
     let numDelMayor = 0;
     let numDelMenor = 0;
-    number.filter((element, index) => {
+    number.forEach((element, index) => {
       sum += element;
       if (number[index] > number[ind]) {
         numDelMayor = element;
