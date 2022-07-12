@@ -4,6 +4,9 @@
  * @param number - an array of numbers
  * @returns the sum of the numbers in the array.
  */
+
+// Podrias llamar de mejor manera la funcion, porque con el nombre entendia que la funcion puede hacer llamadas a los numeros de ciertos usuarios
+//
 const callUserNumbers = (user, number) => {
   try {
     let sum = 0;
@@ -32,17 +35,19 @@ const callUserNumbers = (user, number) => {
   }
 };
 
+
 const numbersFrom100 = () => {
   const NUMBER = 100;
+  let sum = 0;
+  // esta funcion va a traer problemas si retornas dentro de un index
+  // con el for que tenias solo va a retornar la funcion un 1
   for (let index = 1; index < NUMBER; index++) {
-    if (index) {
-      return index;
-    } else {
-      return index;
-    }
+    sum += index;
   }
+  return sum
 };
 
+// con esta funcion podrias intentar los if ternarios
 const chartPhrase = (phrase) => {
   if (phrase === phrase.split(" ").join("")) {
     return `your ${phrase} have a long from ${phrase.length}`;
@@ -60,6 +65,7 @@ const callPhrase = (phrase) => {
 const callPhraseTwo = (phrase) => {
   try {
     if (phrase === phrase.split(" ").join("")) {
+      // podrias usar includes, en lugar de indexOf, porque indexOf te regresa la posicion e includes solo un booleano
       const exist = phrase.indexOf("a");
       if (exist >= 0) {
         return `Phrase: ${phrase}, replace for ${phrase.replace("a", "e")}`;
@@ -73,6 +79,7 @@ const callPhraseTwo = (phrase) => {
     console.error(error);
   }
 };
+
 export {
   callUserNumbers,
   numbersFrom100,
